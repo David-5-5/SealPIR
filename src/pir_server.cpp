@@ -212,7 +212,7 @@ PirReply PIRServer::generate_reply(PirQuery &query, uint32_t client_id) {
           expanded_query.end(),
           std::make_move_iterator(expanded_query_part.begin()),
           std::make_move_iterator(expanded_query_part.end()));
-      expanded_query_part.clear();
+      // expanded_query_part.clear();
     }
     cout << "Server: expansion done " << endl;
     if (expanded_query.size() != n_i) {
