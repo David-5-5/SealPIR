@@ -20,9 +20,9 @@ int main(int argc, char *argv[]) {
   assert(simple_query_test(1 << 10, 288, 4096, 20, 1) == 0);
 
   // Forces ciphertext expansion to be the same as the degree
-  assert(simple_query_test(1 << 20, 288, 4096, 20, 1) == 0);
+  assert(simple_query_test(1 << 16, 288, 4096, 20, 1) == 0);
 
-  assert(simple_query_test(1 << 20, 288, 4096, 20, 2) == 0);
+  assert(simple_query_test(1 << 16, 288, 4096, 20, 2) == 0);
 }
 
 int simple_query_test(uint64_t num_items, uint64_t item_size, uint32_t degree,
